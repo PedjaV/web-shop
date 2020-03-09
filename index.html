@@ -56,18 +56,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800"
       rel="stylesheet"
     />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159583920-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-      ga("send", "event", "id", "productionName", "price");
-      dataLayer.push = ({ 'event': 'custumeEvent', 'eventInfo': {
-          id: "",
-          productionName: "",
-          price: ""
-        }
-      });
-    </script>
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159583920-1');
+  gtag('create', 'UA-159583920-1', 'https://pedjav.github.io/web-shop/');
+  gtag('send', 'pageveiw');
+</script>
+
 
     <!-- Google Tag Manager -->
     <script>
