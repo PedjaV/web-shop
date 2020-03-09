@@ -66,13 +66,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   gtag('config', 'UA-159583920-1');
       gtag('set', {'user_id': 'UA-159583920-1'});
       ga("send", "event", "id", "productionName", "price");
-      dataLayer.push = [
-        {
+      dataLayer.push = ({ 'event': 'custumeEvent', 'eventInfo': {
           id: "",
           productionName: "",
           price: ""
         }
-      ];
+      });
     </script>
 
     <!-- Google Tag Manager -->
