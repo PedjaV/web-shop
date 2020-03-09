@@ -56,24 +56,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800"
       rel="stylesheet"
     />
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159583920-1"></script>
+ 
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  
 
-  gtag('config', 'UA-159583920-1');
-  gtag('create', 'UA-159583920-1', 'https://pedjav.github.io/web-shop/');
-  gtag('send', 'pageveiw');
-  gtag('send', 'event', 'customeEvenet', 'id', 'productionName', 'price')
-  dataLayer.push({ 'event': 'customEvent',  'eventInfo' : {
+  ga('config', 'UA-159583920-1');
+  ga('create', 'UA-159583920-1', 'https://pedjav.github.io/web-shop/');
+  ga('send', 'pageveiw');
+  ga('send', 'event', 'customeEvenet', 'id', 'productionName', 'price')
+  dataLayer[{ 'event': 'customEvent',  'eventInfo' : [{
     'id': '10',
     'productionName' : 'Freedom Oil',
     'price' : '78.00'
-  }
+  },
+  { 'id': '11', 
+		'productionName': 'Saffola Gold', 
+		'price': '130.00'}]
+  
 
-  });
+  }];
 </script>
 
 
