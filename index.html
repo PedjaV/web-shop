@@ -67,31 +67,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   gtag('js', new Date());
   gtag('config', 'UA-159583920-1');
   gtag('send', 'pageveiw');
-
-//   dataLayer.push({
-//   'ecommerce': {
-//     'currencyCode': 'EUR',                       
-//     'impressions': [
-//      {
-//        'name': 'Almonds',       
-//        'id': '75924',
-//        'price': '149',
-//        'position': 1
-//      },
-//      {
-//        'name': 'Cashew Nuts',
-//        'id': '75926',
-//        'price': '200.00',
-//        'position': 2
-//      },
-//     {
-//       'name': 'Pista...',
-//        'id': '75926',
-//        'price': '520.99',
-//        'position': 3
-//     }]
-//   }
-// });
 </script>
 
 
@@ -2686,7 +2661,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </div>
     <!-- //copyright -->
+    <script>
+      dataLayer = [];
 
+      $('#ime').click(function(){
+      var name = $(this).text; 
+      
+      
+
+
+dataLayer.push({
+      'insightCategory': 'Insights',
+       'name': name  
+});
+});
+    </script>
     <!-- js-files -->
     <!-- jquery -->
     <script src="js/jquery-2.1.4.min.js"></script>
