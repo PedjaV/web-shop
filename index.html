@@ -68,30 +68,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   gtag('config', 'UA-159583920-1');
   gtag('send', 'pageveiw');
 
-  dataLayer.push({
-  'ecommerce': {
-    'currencyCode': 'EUR',                       
-    'impressions': [
-     {
-       'name': 'Almonds',       
-       'id': '75924',
-       'price': '149',
-       'position': 1
-     },
-     {
-       'name': 'Cashew Nuts',
-       'id': '75926',
-       'price': '200.00',
-       'position': 2
-     },
-    {
-      'name': 'Pista...',
-       'id': '75926',
-       'price': '520.99',
-       'position': 3
-    }]
-  }
-});
+//   dataLayer.push({
+//   'ecommerce': {
+//     'currencyCode': 'EUR',                       
+//     'impressions': [
+//      {
+//        'name': 'Almonds',       
+//        'id': '75924',
+//        'price': '149',
+//        'position': 1
+//      },
+//      {
+//        'name': 'Cashew Nuts',
+//        'id': '75926',
+//        'price': '200.00',
+//        'position': 2
+//      },
+//     {
+//       'name': 'Pista...',
+//        'id': '75926',
+//        'price': '520.99',
+//        'position': 3
+//     }]
+//   }
+// });
 </script>
 
 
@@ -1380,7 +1380,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <img src="images/m2.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                        <a href="single.html"  class="link-product-add-cart"  onload="dataLayer.push({ 'event': 'customEvent', 'eventInfo' :{'id': '75925', 'name': 'Cashew Nuts', 'price': '200.00' }})"  
+                        <a href="single.html"  class="link-product-add-cart"  onclick="dataLayer.push({ 'event': 'productClick', 
+                        'ecommerce': {
+                          'click': {
+                              'actionField': {'list': 'Search Results'}, 
+                                'products': [{ 
+                                 'id': '75925', 
+                                  'name': 'Cashew Nuts', 
+                                  'price': '200.00' }]}}})"  
                           >Quick View</a
                         >
                       </div>
