@@ -71,7 +71,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	gtag('require', 'ecommerce', 'ecommerce.js');	
 	gtag('require', 'ec');
   gtag('set', 'userId', '213265711');
-  
+  gtag("ec:addImpression", {
+"id": "75924", 
+"name": "Almonds 100g", 
+"price": "2$149.00", 
+"position": 1
+});
   
   gtag('send', 'pageveiw');
 </script>
@@ -1302,7 +1307,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <img src="images/m1.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                        <a href="single.html" class="link-product-add-cart"
+                        <a href="single.html" onclick="SendECClick( "Almonds 100g", "75924", "$149.00", "1");"  class="link-product-add-cart" 
                           >Quick View</a
                         >
                       </div>
