@@ -67,11 +67,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   gtag('js', new Date());
   gtag('config', 'UA-159583920-1');
   gtag('send', 'pageveiw');
-
+  gtag('require', 'ecommerce', 'ecommerce.js');	
+	gtag('require', 'ec');
+	gtag('set', '&uid', '213265711'); 
   dataLayer[{
         'ecommerce': {
-          'impression': [{
-            'id': '75924',
+          'impression': [
+            {'id': '75924',
             'name': 'Almonds',
             'price': '149.00',
             'position': 1 },
@@ -1436,7 +1438,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <img src="images/m3.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                         <a href="single.html" class="link-product-add-cart"  onclick="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75926', 'name': 'Pista...', 'price': '520.99' }})"
+                         <a href="single.html" class="link-product-add-cart"  onload="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75926', 'name': 'Pista...', 'price': '520.99' }})"
                           >Quick View</a
                         >
                       </div>
