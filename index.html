@@ -67,9 +67,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   gtag('js', new Date());
   gtag('config', 'UA-159583920-1');
   gtag('require', 'displayfeatures'); 
-  
 	gtag('require', 'ec');
 	gtag('set', {'user_id': '213265711'}); 
+  dataLayer.push({
+    'event': 'customEvent',
+    'eventInfo': {
+      'id': '75924', 
+      'Name': 'Almonds', 
+      'price': '149.00',
+      'position' : 1
+    }
+  });
 </script>
 
 
@@ -1298,7 +1306,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <img src="images/m1.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                      <a href="single.html"  class="link-product-add-cart "  onclick="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75924', 'Name': 'Almonds', 'price': '149.00' }})" 
+                      <a href="single.html"  class="link-product-add-cart "  onclick="dataLayer.push({ 'event': 'customEvent', 'eventInfo' :{'id': '75924', 'Name': 'Almonds', 'price': '149.00' }})" 
                           >Quick View</a
                         >
                       </div>
