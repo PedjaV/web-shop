@@ -66,10 +66,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-159583920-1');
-  gtag('send', 'pageveiw');
+  gtag('require', 'displayfeatures'); 
   gtag('require', 'ecommerce', 'ecommerce.js');	
 	gtag('require', 'ec');
 	gtag('set', '&uid', '213265711'); 
+  
   dataLayer[{
         'ecommerce': {
           'impression': [
@@ -90,6 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           ]
         }
       }];
+      gtag('send', 'pageveiw');
 </script>
 
 
