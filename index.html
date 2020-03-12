@@ -1287,15 +1287,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="wrapper">
             <!-- first section (nuts) -->
             <div class="product-sec1" id="sec1">
-              <h3 class="heading-tittle">Nuts</h3>
-              <div class="col-md-4 product-men">
+              <h3 class="heading-tittle" >Nuts</h3>
+              <div class="col-md-4 product-men" onload="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75924', 'Name': 'Almonds', 'price': '149.00' }})">
                 <div class="men-pro-item simpleCart_shelfItem">
                   <div id="productID" class="hidden1" value="75924"></div>
                   <div class="men-thumb-item">
                     <img src="images/m1.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                      <a href="single.html"  class="link-product-add-cart "  onclick="dataLayer.push({ 'event': 'customEvent', 'eventInfo' :{'id': '75924', 'Name': 'Almonds', 'price': '149.00' }})" 
+                      <a href="single.html"  class="link-product-add-cart "  onclick="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75924', 'Name': 'Almonds', 'price': '149.00' }})" 
                           >Quick View</a
                         >
                       </div>
@@ -1348,21 +1348,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 product-men">
+              <div class="col-md-4 product-men" onload="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75925', 'Name': 'Cashew Nuts', 'price': '200.00' }})">
                 <div class="men-pro-item simpleCart_shelfItem">
                   <div id="productID" class="hidden1" value="75925"></div>
                   <div class="men-thumb-item">
                     <img src="images/m2.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                        <a href="single.html"  class="link-product-add-cart"  onclick="dataLayer.push({ 'event': 'productClick', 
-                        'ecommerce': {
-                          'click': {
-                              'actionField': {'list': 'Search Results'}, 
-                                'products': [{ 
-                                 'id': '75925', 
-                                  'name': 'Cashew Nuts', 
-                                  'price': '200.00' }]}}})"  
+                        <a href="single.html"  class="link-product-add-cart"  onclick="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75925', 'Name': 'Cashew Nuts', 'price': '200.00' }})"
                           >Quick View</a
                         >
                       </div>
@@ -1415,14 +1408,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 product-men">
+              <div class="col-md-4 product-men" onload="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75926', 'Name': 'Pista...', 'price': '520.99' }})">
                 <div class="men-pro-item simpleCart_shelfItem">
                   <div id="productID" class="hidden1" value="75926"></div>
                   <div class="men-thumb-item">
                     <img src="images/m3.jpg" alt="" />
                     <div class="men-cart-pro">
                       <div class="inner-men-cart-pro">
-                        <a href="single.html" class="link-product-add-cart"  onclick="dataLayer.push({ 'event': 'customEvent', 'eventInfo' :{'id': '75926', 'name': 'Pista...', 'price': '520.99' }})"
+                        <a href="single.html" class="link-product-add-cart"  onclick="dataLayer.push({ 'event': 'ecommerce', 'impression' :{'id': '75926', 'name': 'Pista...', 'price': '520.99' }})"
                           >Quick View</a
                         >
                       </div>
@@ -2662,21 +2655,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //copyright -->
     <script>
-      dataLayer = [];
-
-      
-      document.getElementById('ime').onclick(function(){
-      var name = $(this).text; 
-      
-      
-
-
-       dataLayer.push({
-      'insightCategory': 'Insights',
-       'name': name  
-});
-});
-      
+      dataLayer({
+        'ecommerce': {
+          'impression': [{
+            'id': '',
+            'name': '',
+            'price': ''
+          }]
+        }
+      });
     </script>
     <!-- js-files -->
     <!-- jquery -->
