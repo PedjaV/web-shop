@@ -69,9 +69,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   gtag('require', 'displayfeatures'); 
   gtag('require', 'ecommerce', 'ecommerce.js');	
 	gtag('require', 'ec');
-	gtag('set', '&uid', '213265711'); 
+	gtag('set', {'user_id': '213265711'); 
   
-  dataLayer[{
+  dataLayer.push({
         'ecommerce': {
           'impression': [
             {'id': '75924',
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             'position': 3 }
           ]
         }
-      }];
+      });
       gtag('send', 'pageveiw');
 </script>
 
