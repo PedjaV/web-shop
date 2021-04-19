@@ -95,7 +95,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '893711567751701');
+  fbq('init', '893711567751701',{
+  'extern_id': ev2clientId
+  });
   fbq('track', 'PageView');
   fbq('track', 'ViewContent');
 </script>
@@ -103,6 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   src="https://www.facebook.com/tr?id=893711567751701&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<script src="./js/index.js"></script>
   </head>
 
   <body>
@@ -2656,11 +2659,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //copyright -->
     <!-- js-files -->
     <!-- jquery -->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <scrip src="js/jquery-2.1.4.min.js"></scrip>
     <!-- //jquery -->
 
     <!-- popup modal (for signin & signup)-->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.magnific-popup.js"></scrip>
     <script>
       $(document).ready(function() {
         $(".popup-with-zoom-anim").magnificPopup({

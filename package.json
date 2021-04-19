@@ -1,0 +1,23 @@
+{
+  "name": "web-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedjaV/web-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedjaV/web-shop/issues"
+  },
+  "homepage": "https://github.com/PedjaV/web-shop#readme",
+  "dependencies": {
+    "events": "^3.2.0",
+    "query-selector": "^2.0.0"
+  }
+}
