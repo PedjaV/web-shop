@@ -114,11 +114,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2564322750537093', {
-  'extern_id': 123456789
+  'extern_id': window.localStorage.getItem('webShop.ev2clientId')
 });
   fbq('track', 'PageView');
   fbq('track', 'ViewContent', {
-  'extern_id': 123456789
+  'extern_id': window.localStorage.getItem('webShop.ev2clientId')
 });
   </script>
   <noscript><img height="1" width="1" style="display:none"
