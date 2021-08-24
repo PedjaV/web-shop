@@ -98,12 +98,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   fbq('init', '296491942142618', {
   'external_id': window.localStorage.getItem('webShop.ev2clientId')
 });
-  fbq('track', 'PageView', {
-  'external_id': window.localStorage.getItem('webShop.ev2clientId')
-});
-  fbq('track', 'ViewContent', {
-  'external_id': window.localStorage.getItem('webShop.ev2clientId')
-});
+  fbq('track', 'PageView', 'external_id');
+  fbq('track', 'ViewContent', 'external_id');
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=296491942142618&ev=PageView&noscript=1"
