@@ -105,10 +105,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1137993143426134', {
-    em: '', 
-  fn: '',    
-  ln: '',
-  external_id: ''    
+    em: document.querySelectorAll(".container>.footer-info.w3-agileits-info>.col-sm-5.address-right>.col-xs-6.footer-grids>ul>li>a")[18].innerText.trim(), 
+  fn: document.querySelectorAll(".container>.footer-info.w3-agileits-info>.col-sm-5.address-right>.col-xs-6.footer-grids.agile-secomk>ul>li>a")[2].innerText.trim(),    
+  ln: document.querySelectorAll(".container>.tittle-w3l")[1].innerText.match(/^(.*).{3}/i)[1].trim(),
+  external_id: document.querySelectorAll(".container>.col-md-7.single-right-left.simpleCart_shelfItem>.single-infoagile>ul>li")[0].innerText.trim()    
 
   });
   fbq('track', 'PageView');
